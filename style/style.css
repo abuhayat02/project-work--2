@@ -14,9 +14,7 @@ body{
     font-variation-settings:
       "slnt" 0;
   }
-.work-sans {
-    font-family: "Work Sans", sans-serif;
-  }
+
 /* shared style */
 .display {
     display: flex;
@@ -25,6 +23,7 @@ body{
     text-align: center;
 }
 .title{
+    width: 70%;
     color: #FFFFFF;
     font-size: 2.7rem;
 }
@@ -32,15 +31,20 @@ body{
     color: rgba(255, 255, 255, 0.79);
     font-size: 0.8rem;
     font-weight: 100;
+    width: 80%;
+
+}
+
+.center-content{
+    margin: auto;
 }
 
 
-
 .btn-1 {
-    background-color: rgb(254, 85, 0);
+    background-color:#E6533C;
     font-weight: bold;
     color: white;
-    padding: 0.7rem 2rem;
+    padding: 1rem 2rem;
     border: none;
     border-radius: 1.5rem;
 
@@ -230,6 +234,28 @@ body{
     gap: 10px;
 }
 
+/* run section  */
+.run-section{
+    width: calc(100%-30px);
+    border-radius: 7px;
+    padding: 30px;
+    background-color: #222222;
+    gap: 50px;
+    margin: 30px 0px;
+    justify-content: space-between;
+}
+.run-item{
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    width: 40%;
+    justify-content: space-evenly;
+}
+.run-image{
+    width: 100%;
+    border-radius: 10px;
+}
+
 @media screen and (max-width:576px) {
     .health {
         /* background-color: red; */
@@ -301,6 +327,11 @@ body{
     .header-section{
         margin: 0px 30px;
     }
+    /* main section  */
+    .main-section{
+        max-width: 100%;
+        margin: auto;
+    }
 
     /* haibt section  */
     .habit-items{
@@ -310,5 +341,20 @@ body{
         justify-content: space-between;
         flex-direction: column;
     }
+    /* run section  */
+.run-section{
+    flex-direction: column;
+    margin: 0px 10px;
+}
+.run-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.btn-width{
+    width: 100%;
+}
 
 }
