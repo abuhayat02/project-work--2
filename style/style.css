@@ -1,8 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
+    /* background-color: black; */
 }
-
+body{
+    background-color: black;
+}
+/* fonts  */
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings:
+      "slnt" 0;
+  }
+.work-sans {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
 /* shared style */
 .display {
     display: flex;
@@ -52,6 +69,9 @@
 .header-section {
     max-width: 1200px;
     margin: 0px auto;
+}
+.bar{
+    display: none;
 }
 
 .header-item {
@@ -111,7 +131,7 @@
 .health-title {
     font-weight: 800;
     color: white;
-    font-size: 5rem;
+    font-size: 4.7rem;
 
 }
 
@@ -202,6 +222,7 @@
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        gap: 20px;
     }
 
     .tutorials {
@@ -240,6 +261,13 @@
         background-image: url("../images/Images 2.png");
         background-repeat: no-repeat;
         background-position: center;
+    }
+    .bar{
+        display: block;
+        cursor: pointer;
+    }
+    .header-section{
+        margin: 0px 30px;
     }
 
 }
