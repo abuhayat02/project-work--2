@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* shared style */
+.display {
+    display: flex;
+}
+
+.btn-1 {
+    background-color: rgb(254, 85, 0);
+    font-weight: bold;
+    color: white;
+    padding: 0.7rem 2rem;
+    border: none;
+    border-radius: 1.5rem;
+
+}
+
+.btn-2 {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 0.7rem 2rem;
+    border: 1px solid lightblue;
+    border-radius: 1.5rem;
+}
+
+.sub-title {
+    color: rgba(255, 255, 255, 0.629);
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+
+/* navbar style */
+.header {
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.921), black);
+    width: 100%;
+    height: fit-content;
+}
+
+.img-bg {
+    /* margin-right: 20%; */
+    background-image: url("../images/Images 2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+    margin-left: 10%;
+}
+
+.header-section {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.header-item {
+    padding: 2rem 0px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header-title {
+    color: rgb(254, 85, 0);
+    font-size: 2rem;
+}
+
+.navbar-items {
+    border: 1px solid rgba(173, 216, 230, 0.724);
+    border-radius: 1.5rem;
+}
+
+.nav-item {
+
+    padding: 10px;
+    /* margin-left:20px; */
+    list-style: none;
+    transition: background-color 1s;
+    border-radius: 1.5rem;
+
+    /* text-decoration: none; */
+}
+
+.nav-item:active {
+    background-color: rgb(254, 85, 0);
+
+}
+
+.nav-item:hover {
+    background-color: rgb(254, 85, 0);
+}
+
+.nav-link {
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.health {
+    /* background-color: red; */
+    /* height: 80%; */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 3rem auto;
+    align-items: center;
+    /* padding: 4rem; */
+    justify-content: space-between;
+}
+
+.health-title {
+    font-weight: 800;
+    color: white;
+    font-size: 5rem;
+
+}
+
+.item-alingment {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+
+.health-item {
+    width: 50%;
+
+}
+
+.justifi-item {
+    align-items: end;
+    justify-content: center;
+}
+
+.justifi-contant {
+    justify-content: center;
+    align-items: start;
+}
+
+.health-container {
+    width: 40%;
+    flex-direction: column;
+    padding: 10rem 0px; 
+
+}
+
+.health-item {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+
+}
+
+.tutorials {
+    /* margin-right: -3rem; */
+    padding: 1.4rem;
+    background-color: rgba(159, 155, 155, 0.318);
+    /* margin: 1rem; */
+    border-radius: 0.5rem;
+    width: fit-content;
+    align-items: center;
+    gap: 10px;
+}
+
+.number {
+    font-size: 2rem;
+    font-weight: 500;
+    color: aliceblue;
+}
+
+.play {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: red;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:576px) {
+    .health {
+        /* background-color: red; */
+        /* gap: 20px; */
+        flex-direction: column;
+        /* width: 100%; */
+        /* max-width: 1200px; */
+        margin: 3rem auto;
+
+        /* padding: 4rem; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-items {
+        display: none;
+    }
+
+    .health-container {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .tutorials {
+        /* margin-right: -3rem; */
+        /* padding: 0.4rem; */
+        background-color: rgba(159, 155, 155, 0.318);
+        /* margin: 1rem; */
+        border-radius: 0.5rem;
+        width: fit-content;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .health-item {
+        /* height: 80%; */
+        /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .justifi-item {
+
+        justify-content: end;
+        width: 80%;
+        align-items: end;
+    }
+
+    .justifi-contant {
+        align-items: start;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .img-bg {
+        background-image: url("../images/Images 2.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+}
